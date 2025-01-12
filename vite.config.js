@@ -13,6 +13,7 @@ export default defineConfig({
       "@pages": resolve(__dirname, "src/pages"),
       "@assets": resolve(__dirname, "src/assets"),
       "@layouts": resolve(__dirname, "src/layouts"),
+      "@common": resolve(__dirname, "src/common"),
     },
   }
 })

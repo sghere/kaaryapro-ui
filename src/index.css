@@ -6,7 +6,7 @@
 body{
   @apply text-primary-950;
   @apply bg-primary-50;
-  @apply dark:bg-primary-700;
+  @apply dark:bg-primary-950;
   @apply dark:text-primary-50;
   font-family: "Open Sans", serif;
 }

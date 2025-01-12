@@ -5,11 +5,12 @@ const AppFooter = () => {
   const pages = [
     { name: "Home", icon: FaHome },
     { name: "Search", icon: FaSearch },
+    { name: "Home", icon: FaHome },
     { name: "Notification", icon: FaBell },
     { name: "Account", icon: FaUser },
   ];
   return (
-    <footer className="flex gap-2 items-center justify-around bg-hillary-100 dark:bg-hillary-900 p-2 bg-gray-200 h-[50px] fixed bottom-0 left-0 w-full">
+    <footer className="flex gap-2 items-center justify-around bg-primary-100 dark:bg-primary-500 p-2 h-[50px] fixed bottom-0 left-0 w-full">
       {pages.map(({ name, icon: Icon }, index) => {
         return (
           <Link

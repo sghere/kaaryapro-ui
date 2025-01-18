@@ -50,7 +50,7 @@ const Account = () => {
         {Options.map(({name,icon:Icon}) => {
           return (
             <Link to={name.replace(" ", "").toLowerCase()}>
-              <li className="text-lg flex gap-3 items-center  dark:hover:text-primary-300 w-full font-thin px-8 py-2">
+              <li className="text-lg flex gap-3 items-center transition-all dark:hover:text-primary-300 w-full font-thin px-8 py-2">
                 <Icon className="size-8"/>
                 {name}
               </li>

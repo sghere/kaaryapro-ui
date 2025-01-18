@@ -6,7 +6,7 @@ const buttonStyles = cva(
   {
     variants: {
       intent: {
-        default:"bg-primary-700",
+        default:"bg-primary-700 rounded-lg text-primary-200 hover:bg-primary-800 hover:text-white",
         failureAlt:
           "bg-transperant text-red-500 border border-gray-300 hover:bg-red-500 hover:border-red-500 hover:text-white",
           icon:"p-2 rounded-lg"
@@ -14,7 +14,7 @@ const buttonStyles = cva(
       size: {
         small: "text-sm",
         medium: "text-base",
-        large: "text-lg",
+        large: "text-lg py-4",
       },
     },
     defaultVariants: {

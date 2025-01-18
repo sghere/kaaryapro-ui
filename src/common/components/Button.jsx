@@ -2,12 +2,14 @@ import { cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 
 const buttonStyles = cva(
-  "px-4 py-2 font-semibold transition text-white bg-blue-500 rounded",
+  "px-4 py-2 font-semibold bg-primary-700 transition text-white rounded",
   {
     variants: {
       intent: {
+        default:"bg-primary-700",
         failureAlt:
           "bg-transperant text-red-500 border border-gray-300 hover:bg-red-500 hover:border-red-500 hover:text-white",
+          icon:"p-2 rounded-lg"
       },
       size: {
         small: "text-sm",
@@ -16,7 +18,7 @@ const buttonStyles = cva(
       },
     },
     defaultVariants: {
-      intent: "primary",
+      intent: "default",
       size: "small",
     },
   }

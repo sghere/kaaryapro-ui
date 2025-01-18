@@ -1,3 +1,15 @@
 export const constants = {
-    isAuthenticated:false
-}
+  isAuthenticated: true,
+};
+
+export const pages = {
+  notification: {
+    title: "Notification",
+  },
+  profile: {
+    title: "Profile",
+  },
+  preferences: {
+    title: "Preferences",
+  },
+};

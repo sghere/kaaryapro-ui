@@ -2,28 +2,29 @@ import React from "react";
 import { FaRegEdit } from "react-icons/fa";
 import { Link } from "react-router";
 import {
-  CiMedicalClipboard ,
+  CiMedicalClipboard,
   CiWallet,
   CiStar,
   CiLocationOn,
   CiCircleInfo,
-  CiLogout 
+  CiLogout,
+  CiSettings,
 } from "react-icons/ci";
 
 const Account = () => {
   const CardLinks = [
-    { name: "My Posts", icon: <CiMedicalClipboard  /> },
-    { name: "Help & support", icon: <CiCircleInfo  /> },
+    { name: "My Posts", icon: <CiMedicalClipboard /> },
+    { name: "Help & support", icon: <CiCircleInfo /> },
   ];
 
   const Options = [
-    { name: "My Plans", icon: CiMedicalClipboard  },
+    { name: "Preferences", icon: CiSettings },
+    { name: "My Plans", icon: CiMedicalClipboard },
     { name: "Wallet", icon: CiWallet },
-    { name: "My Ratings", icon: CiStar   },
-    { name: "Manage addresses", icon: CiLocationOn  },
-    { name: "About kaarya.pro", icon: CiCircleInfo  },
-    { name: "logout", icon: CiLogout  },
-
+    { name: "My Ratings", icon: CiStar },
+    { name: "Manage addresses", icon: CiLocationOn },
+    { name: "About kaarya.pro", icon: CiCircleInfo },
+    { name: "logout", icon: CiLogout },
   ];
   return (
     <div className="size-full grid gap-2">
@@ -47,11 +48,11 @@ const Account = () => {
         </div> */}
       </div>
       <ul className="Options w-full ">
-        {Options.map(({name,icon:Icon}) => {
+        {Options.map(({ name, icon: Icon }) => {
           return (
             <Link to={name.replace(" ", "").toLowerCase()}>
               <li className="text-lg flex gap-3 items-center transition-all dark:hover:text-primary-300 w-full font-thin px-8 py-2">
-                <Icon className="size-8"/>
+                <Icon className="size-8" />
                 {name}
               </li>
             </Link>

@@ -5,19 +5,22 @@ import Home from "@pages/Home";
 import Login from "@pages/Login";
 import NotFound from "@pages/NotFound";
 import Notification from "@pages/Notification";
-import {  Route, Routes } from "react-router";
+import { Route, Routes } from "react-router";
 
 function App() {
   return (
-      <Routes>
-        <Route path="/login" element={<Login/>} />  
-        <Route  element={<AppLayout />} >
-          <Route index element={<Home />} />
-          <Route path="/notification" element={<Notification />} />
-          <Route path="/account" element={<Account />} />
+    <Routes>
+      <Route path="login" element={<Login />} />
+      <Route element={<AppLayout />}>
+        <Route index element={<Home />} />
+        <Route path="notification" element={<Notification />} />
+        <Route path="profile">
+          <Route index element={<Account />} />
+          <Route path="preferences" element={<div>Pref</div>} />
         </Route>
-        <Route path="*" element={<NotFound/>} />
-      </Routes>
+      </Route>
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

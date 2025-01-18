@@ -1,14 +1,14 @@
 import React from "react";
 import { FaHome, FaSearch, FaBell, FaUser } from "react-icons/fa";
-import { CiUser,CiHome,CiGrid41,CiSearch,CiBellOn     } from "react-icons/ci";
+import { CiUser, CiHome, CiGrid41, CiSearch, CiBellOn } from "react-icons/ci";
 import { Link } from "react-router";
 const AppFooter = () => {
   const pages = [
-    { name: "Home", icon: CiHome  },
-    { name: "Search", icon: CiSearch  },
+    { name: "Home", icon: CiHome },
+    { name: "Search", icon: CiSearch },
     { name: "Feed", icon: CiGrid41 },
-    { name: "Notification", icon: CiBellOn  },
-    { name: "Account", icon: CiUser },
+    { name: "Notification", icon: CiBellOn },
+    { name: "Profile", icon: CiUser },
   ];
   return (
     <footer className="flex gap-2 items-center justify- dark:bg-transparent p-2 h-[80px] fixed bottom-0 left-0 w-full">
